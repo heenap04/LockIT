@@ -6,7 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styled, { createGlobalStyle } from 'styled-components';
 
 // Base API configuration
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+
 
 // Global Styles
 const GlobalStyle = createGlobalStyle`

@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styled, { createGlobalStyle } from 'styled-components';
 
 // Base API configuration
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://lockit-backend-mdut.onrender.com/api';
 
 // Global Styles
 const GlobalStyle = createGlobalStyle`

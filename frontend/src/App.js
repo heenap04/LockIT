@@ -5,8 +5,11 @@ import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'r
 import { motion, AnimatePresence } from 'framer-motion';
 import styled, { createGlobalStyle } from 'styled-components';
 
-// Base API configuration
-axios.defaults.baseURL = 'http://localhost:5000/api';
+// Base API configuration - Use environment variable or fallback to localhost
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+axios.defaults.baseURL = API_BASE_URL;
+
+console.log('🔗 API Base URL:', API_BASE_URL);
 
 // Global Styles
 const GlobalStyle = createGlobalStyle`

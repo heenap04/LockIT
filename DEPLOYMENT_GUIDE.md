@@ -5,11 +5,7 @@
 ### 1. Backend Configuration
 1. **Environment Variables**: Create `.env` file in `/backend` with:
    ```env
-   MONGO_URI=your-production-mongodb-uri
-   JWT_SECRET=your-super-secret-jwt-key-here-make-it-long-and-random
-   PORT=5000
-   NODE_ENV=production
-   FRONTEND_URL=https://your-frontend-domain.com
+   
    ```
 
 2. **MongoDB Setup**: 
